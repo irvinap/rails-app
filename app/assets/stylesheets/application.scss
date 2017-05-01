@@ -13,3 +13,45 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+
+body {
+  background-image: url('naturalblack.png');
+}
+
+.welcome-header
+{
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+  letter-spacing: 5px;
+}
+
+h1
+{
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+  letter-spacing: 5px;
+}
+
+button
+{
+  padding-left: 25%;
+}
+
+a
+{
+    color: black;
+}
+
+a:hover
+  {
+    text-decoration: none;
+    color: white;
+  }
+
+  #navbarTogglerDemo01
+  {
+    align-items: center;
+  }
