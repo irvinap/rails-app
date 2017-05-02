@@ -15,3 +15,10 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(function(){
+    $('#welcomegroup').click(function(){
+        window.location='/about-us'
+    });
+});
