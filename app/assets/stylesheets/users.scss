@@ -1,3 +1,32 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+table
+{
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3%;
+}
+
+td
+{
+    padding:0 15px 0 15px;
+}
+
+table tr td:empty {
+    width: 50px;
+}
+
+table tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.new-userbtn
+{
+  margin-left: 45%;
+}
