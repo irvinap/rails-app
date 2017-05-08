@@ -8,8 +8,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body background="skin_side_up.png">
     <%= render 'layouts/header' %>
+    <!-- Error message -->
+    <%= render 'layouts/flash' %>
     <%= yield %>
   </body>
 </html>
