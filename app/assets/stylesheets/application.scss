@@ -20,41 +20,58 @@ body {
 
 }
 
-.welcome-header
-{
-  color: black;
-  text-align: center;
-  padding-top: 20%;
-  letter-spacing: 5px;
-}
-
-h1
-{
-  color: grey;
-  text-align: center;
-  padding-top: 2%;
-  letter-spacing: 5px;
-}
-
-button#home-button
-{
-  margin-left: 45%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-a
-{
-    color: black;
-}
-
-a:hover
+/* Homepage Header */
+  .welcome-header
   {
-    text-decoration: none;
-    color: white;
+    color: black;
+    text-align: center;
+    padding-top: 20%;
+    letter-spacing: 5px;
   }
+
+  h1
+  {
+    color: grey;
+    text-align: center;
+    padding-top: 2%;
+    letter-spacing: 5px;
+  }
+
+  button#home-button
+  {
+    margin-left: 45%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0.5%;
+  }
+
+
+
+/* Navigation Bar */
+  a
+  {
+      color: black;
+      padding: 5px 8px 5px 8px;
+  }
+
+  a:hover
+    {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav li a
+    {
+      text-transform: uppercase;
+      font-size: 11px;
+    }
 
   #navbarTogglerDemo01
   {
     align-items: center;
+  }
+
+  button.btn btn-outline-success my-2 my-sm-0
+  {
+    color: black;
   }
