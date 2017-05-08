@@ -15,11 +15,6 @@
  */
  @import "bootstrap";
 
-body {
-  background-image: url('skin_side_up.png');
-
-}
-
 /* Homepage Header */
   .welcome-header
   {
@@ -45,7 +40,11 @@ body {
     margin-top: 0.5%;
   }
 
-
+.flashmessage
+{
+  align-items: center;
+  color: yellow;
+}
 
 /* Navigation Bar */
   a
