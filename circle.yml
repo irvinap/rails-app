@@ -1,0 +1,7 @@
+
+#this deployment stage is going to deploy to the brach stated below
+  deployment:
+    staging:
+      branch: testing
+      heroku:
+        appname: mighty-sea-14847
