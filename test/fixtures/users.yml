@@ -3,11 +3,11 @@
 one:
   first_name: MyString
   last_name: MyString
-  email: MyString
-  password_digest: MyString
+  email: foo@example.com
+  password_digest: <%= User.digest("MyString") %>
 
 two:
   first_name: MyString
   last_name: MyString
-  email: MyString
-  password_digest: MyString
+  email: bar@example.com
+  password_digest: <%= User.digest("MyString") %>
