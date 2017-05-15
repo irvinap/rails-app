@@ -1,13 +1,22 @@
 
 <html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="stylesheet/animate.scss" rel="stylesheet"/>
+  </head>
+
   <body >
   <header>
 
-  </header>
+  </head>
 
-  <div class="welcomegroup" id="welcomegroup">
-    <h1 class="welcome-header">Welcome Home.</h1>
-    <button type="button" class="btn btn-secondary" id="home-button" href="/about-us">Enter</button>
-  </div>
+  <section class="intro">
+    <div class="welcomegroup" id="welcomegroup">
+        <h1 class="welcome-header">Welcome Home.</h1>
+      <div class="enterbtn">
+        <%= link_to '<button type="button" class="btn btn-secondary" id="home-button">Enter</button>'.html_safe, about_us_path %>
+      </div>
+    </div>
+  </section>
   </body>
 </html>

@@ -1,0 +1,12 @@
+
+<h1>Blogposts list</h1>
+
+<div class="blog-index">
+  <% @blogposts.each do |blogpost| %>
+  <div class="blog-post">
+    <h3><%= blogpost.title %></h3>
+    <h4>Author: <%= "#{blogpost.user.first_name} #{blogpost.user.last_name}" %></h4>
+  <% end %>
+
+  <%= link_to 'New blogpost', new_user_blogpost_path(@user) %>
+</div>

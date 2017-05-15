@@ -1,11 +1,15 @@
 
+<!-- NAVIGATION BAR -->
+
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Brand</a>
-    &nbsp;&nbsp;
+
+<!--  Brand Logo -->
+    <img src="logo2.png" alt="Brand" height="25" id="brand"> Brand
+    &nbsp;
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <%= link_to("Home", root_path, {:class => "/home"}) %>
@@ -29,13 +33,19 @@
   <!-- Login -->
       <% if logged_in? %>
         <li class="nav-item">
+          <%= link_to("Blogposts", user_blogposts_path(current_user), { :class => "/nav-link"}) %>
+        </li>
+        <li class="nav-item">
           <%= link_to("Logout, #{current_user.first_name} " " #{current_user.last_name}",logout_path, { method: :delete, :class => "/nav-link"}) %>
           <!-- <%= link_to("Logout" + current_user.first_name,logout_path, { method: :delete, :class => "/nav-link"}) %> -->
         </li>
       <% else %>
-      <li class="nav-item">
-        <%= link_to("Login", login_path, { :class => "/nav-link"}) %>
-      </li>
+        <li class="nav-item">
+          <%= link_to("Login", login_path, { :class => "/nav-link"}) %>
+        </li>
+        <li class="nav-item">
+          <%= link_to("Sign Up", signup_path, { :class => "/nav-link"}) %>
+        </li>
       <% end %>
     </ul>
 

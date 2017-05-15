@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
     #error message
-      flash[:notice] = "You have entered an incorrect email or password."
+      flash.now[:notice] = "You have entered an incorrect email or password."
     #then back to login form again
       render 'new'
     end
