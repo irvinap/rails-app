@@ -3,5 +3,6 @@
   deployment:
     staging:
       branch: testing
-      heroku:
-        appname: mighty-sea-14847
+      commands:
+        - git push git@heroku.com:mighty-sea-14847.git $CIRCLE_SHA1:refs/heads/master
+        - heroku run rails db:migrate --app mighty-sea-14847
