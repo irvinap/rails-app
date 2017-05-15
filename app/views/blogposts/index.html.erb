@@ -4,9 +4,12 @@
 <div class="blog-index">
   <% @blogposts.each do |blogpost| %>
   <div class="blog-post">
-    <h3><%= blogpost.title %></h3>
-    <h4>Author: <%= "#{blogpost.user.first_name} #{blogpost.user.last_name}" %></h4>
+    <h4><%= blogpost.title %></h4>
+    <p id="author-title">Author: <%= "#{blogpost.user.first_name} #{blogpost.user.last_name}" %></p>
   <% end %>
 
-  <%= link_to 'New blogpost', new_user_blogpost_path(@user) %>
+<!-- Button -->
+  <div class="enterbtn">
+    <%= link_to '<button type="button" class="btn btn-secondary" >New blogspot</button>'.html_safe, new_user_blogpost_path(@user) %>
+  </div>
 </div>
